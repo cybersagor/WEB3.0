@@ -1,0 +1,117 @@
+### **🛠️ Week 3: Advanced Solidity and Contract Design**
+
+This week, you'll move beyond basic Solidity programming and dive into more complex contract structures, design patterns, and advanced concepts like proxy patterns and upgradability. This foundation is crucial for identifying sophisticated vulnerabilities in Web3 projects.
+
+---
+
+#### **🔍 Day 1-2: Advanced Solidity Concepts**
+
+* 📌 **Complex Data Types and Storage**
+
+  * Mappings, structs, and dynamic arrays
+  * Understanding the EVM storage model
+  * Gas optimization with **memory** and **storage**
+* 📌 **Function Overloading and Fallbacks**
+
+  * Function overloading
+  * Fallback and receive functions
+  * Using **payable** functions correctly
+* 📌 **Reading:**
+
+  * [Solidity Storage Layout](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html)
+  * [Understanding the EVM](https://ethereum.org/en/developers/docs/evm/)
+* 📌 **Practical:**
+
+  * Build a contract with complex data structures (e.g., a decentralized voting system).
+  * Use function overloading to handle multiple function signatures.
+
+---
+
+#### **🔍 Day 3-4: Contract Design Patterns**
+
+* 📌 **Common Design Patterns**
+
+  * Factory pattern
+  * Singleton pattern
+  * Access control patterns (Ownable, RBAC)
+* 📌 **Upgradable Contracts**
+
+  * Proxy contracts (EIP-1967, EIP-1822)
+  * UUPS and Transparent Proxy patterns
+  * Risks of upgradable smart contracts
+* 📌 **Reading:**
+
+  * [Solidity Design Patterns](https://fravoll.github.io/solidity-patterns/)
+  * [Proxy Patterns in Solidity](https://blog.openzeppelin.com/the-transparent-proxy-pattern/)
+* 📌 **Practical:**
+
+  * Implement a simple factory contract to deploy multiple instances of a smart contract.
+  * Create an upgradable contract using OpenZeppelin’s proxy library.
+
+---
+
+#### **🔍 Day 5-6: Gas Optimization and Best Practices**
+
+* 📌 **Gas Optimization Techniques**
+
+  * Efficient data structures (compact storage)
+  * Use of **unchecked** blocks
+  * Minimizing external calls
+* 📌 **Best Practices for Secure Smart Contracts**
+
+  * Pull over push payments
+  * Using **reentrancy guards**
+  * Reducing attack surface by minimizing contract complexity
+* 📌 **Reading:**
+
+  * [Gas Optimization Techniques](https://ethereum.stackexchange.com/questions/34381/how-to-optimize-gas-in-solidity-smart-contracts)
+  * [Security Best Practices](https://consensys.net/diligence/blog/2019/09/secure-smart-contract-guidelines/)
+* 📌 **Practical:**
+
+  * Refactor a previous project (e.g., your ERC-20 token) for gas efficiency.
+  * Use **Slither** and **MythX** to identify gas inefficiencies.
+
+---
+
+#### **🔍 Day 7: Testing and Debugging Smart Contracts**
+
+* 📌 **Writing Robust Unit Tests**
+
+  * Using **Hardhat** and **Foundry** for automated testing
+  * Mocking external contracts
+  * Testing for edge cases and unexpected inputs
+* 📌 **Debugging with Tenderly and Remix**
+
+  * Using console logs for real-time contract state inspection
+  * Replaying failed transactions
+* 📌 **Reading:**
+
+  * [Writing Secure Tests](https://docs.openzeppelin.com/test-environment/0.1/)
+  * [Foundry Testing Guide](https://book.getfoundry.sh/)
+* 📌 **Practical:**
+
+  * Create a comprehensive test suite for your previous projects.
+  * Use Hardhat’s coverage tools to ensure high test coverage.
+
+---
+
+#### **🛠️ Essential Tools for Week 3**
+
+* **Hardhat** - Advanced Ethereum development environment
+* **Foundry** - High-performance Solidity testing framework
+* **OpenZeppelin Contracts** - Secure smart contract libraries
+* **Slither** - Static analysis tool for Solidity
+* **Tenderly** - Real-time smart contract debugging and monitoring
+
+---
+
+#### **💡 Key Takeaways by the End of Week 3**
+
+* You should be comfortable with complex data structures and function overloading.
+* You should understand gas optimization and secure contract design.
+* You should know how to deploy upgradable contracts and the security risks involved.
+* You should be familiar with testing tools like Hardhat and Foundry.
+
+---
+
+Would you like me to guide you through building a real-world DeFi protocol like a **Staking Contract** or a **Decentralized Exchange (DEX)** as part of this week’s practice? This will give you a practical edge in understanding complex attack vectors. 😊

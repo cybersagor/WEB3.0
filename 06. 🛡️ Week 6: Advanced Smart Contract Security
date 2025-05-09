@@ -1,0 +1,105 @@
+### **🛡️ Week 6: Advanced Smart Contract Security**
+
+This week, you’ll level up your security skills by diving deep into advanced attack techniques, vulnerability detection, and secure contract architecture. This is the stage where you’ll learn to think like a real attacker, spotting subtle flaws in complex smart contract systems.
+
+---
+
+#### **🔍 Day 1-2: Advanced Exploits and Attack Techniques**
+
+* 📌 **Understanding Complex Attack Vectors**
+
+  * Sandwich attacks and MEV (Maximal Extractable Value)
+  * Flash loan arbitrage and oracle manipulation
+  * Cross-contract reentrancy and callback exploits
+* 📌 **Cross-Chain Vulnerabilities**
+
+  * Bridge attacks and cross-chain message integrity
+  * Using Layer 2 scaling solutions securely
+* 📌 **Reading:**
+
+  * [Understanding MEV](https://ethereum.org/en/developers/docs/mev/)
+  * [Cross-Chain Attack Case Studies](https://rekt.news/)
+* 📌 **Practical:**
+
+  * Simulate a sandwich attack on a DeFi protocol.
+  * Build a flash loan contract and test for common vulnerabilities.
+
+---
+
+#### **🔍 Day 3-4: Advanced Solidity Security Features**
+
+* 📌 **Assembly and Inline Yul**
+
+  * Using inline assembly for gas optimization
+  * Understanding low-level EVM operations
+  * Risks of using assembly (unchecked math, memory corruption)
+* 📌 **Delegatecall and Proxy Patterns**
+
+  * Upgradability risks
+  * Proxy patterns (Transparent, UUPS, Diamond)
+  * Security implications of **delegatecall** and storage collisions
+* 📌 **Reading:**
+
+  * [Yul and Assembly in Solidity](https://docs.soliditylang.org/en/latest/yul.html)
+  * [Proxy Contract Risks](https://consensys.net/diligence/blog/2019/09/secure-smart-contract-guidelines/)
+* 📌 **Practical:**
+
+  * Implement a proxy contract and explore **delegatecall** risks.
+  * Refactor a contract using inline assembly for gas savings.
+
+---
+
+#### **🔍 Day 5-6: Fuzz Testing and Formal Verification**
+
+* 📌 **Fuzz Testing for Smart Contracts**
+
+  * Setting up Echidna for automated fuzz testing
+  * Using invariant testing for deeper contract analysis
+* 📌 **Formal Verification and SMT Solvers**
+
+  * Using MythX, Manticore, and Certora Prover
+  * Verifying complex contract logic for complete coverage
+* 📌 **Reading:**
+
+  * [Fuzz Testing with Echidna](https://github.com/crytic/echidna)
+  * [Formal Verification in Solidity](https://medium.com/@smarx/formal-verification-in-ethereum-smart-contracts-8faea2e994c4)
+* 📌 **Practical:**
+
+  * Set up Echidna to test for unexpected contract behaviors.
+  * Use MythX to perform deep static analysis on your smart contracts.
+
+---
+
+#### **🔍 Day 7: Capture the Flag (CTF) Challenges**
+
+* 📌 **Practice Real-World Exploits**
+
+  * Participate in CTFs like Ethernaut, Capture the Ether, and Damn Vulnerable DeFi
+  * Analyze real-world exploits from Rekt and Paradigm CTFs
+* 📌 **Reading:**
+
+  * [Ethernaut Walkthrough](https://solidity-by-example.org/hacks/ethernaut/)
+  * [Paradigm CTF Challenges](https://github.com/paradigmxyz)
+* 📌 **Practical:**
+
+  * Solve at least 5 challenges on Ethernaut.
+  * Write a detailed post-mortem for each exploit you replicate.
+
+---
+
+#### **🛠️ Essential Tools for Week 6**
+
+* **Echidna** - Fuzz testing for smart contracts
+* **Manticore** - Symbolic execution and vulnerability detection
+* **MythX** - Automated smart contract security analysis
+* **Foundry** - High-performance Solidity testing framework
+* **Rekt.news** - Real-world attack case studies
+
+---
+
+#### **💡 Key Takeaways by the End of Week 6**
+
+* You should understand advanced attack vectors like MEV and cross-chain exploits.
+* You should be comfortable using inline assembly for gas optimization.
+* You should know how to use fuzz testing and formal verification to identify deep contract flaws.
+* You should have experience with real-world CTF challenges, preparing you for live bug bounties.

@@ -1,3 +1,63 @@
+---
+
+### **Complete List of 50 Vulnerabilities:**  
+
+---
+
+✅ **1. Missing `onlyOwner` on Critical Functions**  
+✅ **2. Using `tx.origin` for Authorization**  
+✅ **3. Reentrancy Attack (Checks-Effects-Interactions Violation)**  
+✅ **4. Uninitialized Storage Pointer**  
+✅ **5. Integer Overflow/Underflow (Pre-Solidity 0.8.0)**  
+✅ **6. Public `selfdestruct()` Function**  
+✅ **7. Unchecked `call()` Return Value**  
+✅ **8. Hardcoded Owner Address**  
+✅ **9. Missing `receive()` or `fallback()`**  
+✅ **10. Delegatecall to Untrusted Contracts**  
+✅ **11. Unprotected Ether Withdrawal (Missing Access Control)**  
+✅ **12. ERC20 Return Values Not Checked**  
+✅ **13. Frontrunning with `block.timestamp`**  
+✅ **14. Unbounded Loops (Gas Limit DoS)**  
+✅ **15. Signature Replay Attacks**  
+✅ **16. Storage Collision in Proxies**  
+✅ **17. Missing Event Emission for Critical Actions**  
+✅ **18. Incorrect ERC721 `safeTransferFrom` Usage**  
+✅ **19. Floating Pragma**  
+✅ **20. Uninitialized Local Variables**  
+✅ **21. ERC777 Reentrancy via `tokensToSend` Hook**  
+✅ **22. Delegatecall Storage Collision**  
+✅ **23. Oracle Manipulation (Spot Price Slippage)**  
+✅ **24. Griefing with Failed Transfers**  
+✅ **25. Unchecked `call()` Return Data**  
+✅ **26. Constructor Shadowing (Pre-0.4.22)**  
+✅ **27. Signature Malleability**  
+✅ **28. Unprotected Initializer**  
+✅ **29. Gas Limit in Loops**  
+✅ **30. Unbounded Array Growth**  
+✅ **31. Flash Loan Price Oracle Manipulation**  
+✅ **32. ERC4626 Inflation Attack**  
+✅ **33. Cross-Chain Replay Attacks**  
+✅ **34. Storage Collision in Proxy Patterns**  
+✅ **35. Griefing with Gas Limits**  
+✅ **36. ERC20 Permit Frontrunning**  
+✅ **37. Unchecked `create2` Preimage**  
+✅ **38. `selfdestruct` in Logic Contracts**  
+✅ **39. Signature Replay in Meta-Transactions**  
+✅ **40. Unbounded `exp` Operations**  
+✅ **41. Arbitrary `delegatecall` in Proxies**  
+✅ **42. ERC721 Reentrancy via `onERC721Received`**  
+✅ **43. Uninitialized Proxy Contracts**  
+✅ **44. `block.number` as Deadline**  
+✅ **45. Missing `receive()` in Payment Splitters**  
+✅ **46. Unchecked `ecrecover` Return**  
+✅ **47. `transfer()` Gas Stipend Limitation**  
+✅ **48. Unprotected Ether Withdrawal in Libraries**  
+✅ **49. Incorrect Interface Detection**  
+✅ **50. Hardcoded Gas Limits in Cross-Chain Calls**  
+
+--- 
+
+
 ### **✅ 1. Missing `onlyOwner` on Critical Functions**  
 #### 📖 **Description**  
 Functions like `mint()`, `withdraw()`, or `pause()` should be restricted to the contract owner. If unprotected, attackers can drain funds or manipulate the contract.  
